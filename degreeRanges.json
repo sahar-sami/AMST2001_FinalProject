@@ -1,0 +1,29 @@
+{
+  "Bachelor of Arts": [[1869, 1924]],
+  "Bachelor of Literature": [[1873, 1886]],
+  "Bachelor of Philosophy": [[1869, 1901]],
+  "Bachelor of Letters": [[1887, 1901]],
+  "Bachelor of Science": [
+    [1869, 1901],
+    [1912, 1924]
+  ],
+  "Bachelor/Doctor of Veterinary Science": [
+    [1871, 1884],
+    [1900, 1924]
+  ],
+  "Bachelor in Agriculture": [
+    [1873, 1885],
+    [1897, 1915]
+  ],
+  "Bachelor in Architecture": [
+    [1873, 1885],
+    [1897, 1924]
+  ],
+  "Civil Engineer": [[1871, 1924]],
+  "Mechanical Engineer": [[1873, 1924]],
+  "Bachelor of Law": [[1888, 1924]],
+  "Bachelor of the Science of Forestry": [[1901, 1907]],
+  "Bachelor of Chemistry": [[1911, 1924]],
+  "Bachelor of Fine Arts": [[1921, 1924]],
+  "Electrical Engineer": [[1921, 1924]]
+}

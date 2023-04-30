@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="timegraph.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body * {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      p {
+        padding-top: 10;
+        padding-bottom: 10;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>History of Baccalaureate Degrees Conferred at Cornell</h1>
+    <div id="intro" style="max-width: 70%">
+      <p>
+        Today, Cornell confers four types of undergraduate/baccalaureate
+        degrees: Bachelor of Arts (B.A.), Bachelor of Science (B.S.), Bachelor
+        of Architecture (B.Arch), and Bachelor of Fine Arts (B.F.A.). How have
+        these offerings changed over time?
+      </p>
+    </div>
+
+    <div id="visualization-1">
+      <style>
+        .flex-container {
+          display: flex;
+        }
+
+        .flex-child-1 {
+          flex: 2;
+        }
+
+        .flex-child-2 {
+          flex: 1;
+        }
+
+        .flex-child:first-child {
+          margin-right: 20px;
+        }
+      </style>
+      <h2>Time Ranges of Possible Degrees Per Year</h2>
+      <div class="flex-container">
+        <div class="flex-child-1" id="vis1-1"></div>
+        <div class="flex-child-2" id="vis1-tooltip">
+          <h3>Information Box</h3>
+          <p id="time-range">Time Range:</p>
+          <p id="infos"></p>
+        </div>
+      </div>
+      <script>
+        timegraph();
+      </script>
+    </div>
+
+    <div id="visualization-2">
+      <h2>Number of Degrees Conferred by Degree Name and Year</h2>
+      <script>
+        countgraph();
+      </script>
+    </div>
+
+    <h3><b>Methodology:</b></h3>
+    <p>
+      I collected this data by going through volumes of the Cornell Register
+      spanning years 1869 to 1924. For each volume, I went through the section
+      detailing the degrees conferred at Commencement and counted the number of
+      records. I chose to focus on undergraduate degrees because they had more
+      solid categories, and also chose to leave out undergraduate degrees that
+      were around for no more than a few years.
+    </p>
+  </body>
+</html>
