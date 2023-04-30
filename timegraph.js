@@ -118,7 +118,7 @@ function timegraph() {
       .style('fill', '#B31B1B');
 
     const defaultText =
-      'Some of the bars below have special facts about that degree. Hover to learn more!';
+      'Some of the bars in the graph have special facts about that degree. Hover to learn more!';
     const timeRangeText = 'Time Range: ';
 
     d3.select('p#time-range').text(timeRangeText);

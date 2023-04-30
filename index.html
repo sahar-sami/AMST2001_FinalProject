@@ -5,13 +5,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
       rel="stylesheet"
     />
 
     <style>
+      h1,
+      h2 {
+        color: #b31b1b;
+      }
+
       body * {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'EB Garamond', serif;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -49,6 +54,12 @@
           flex: 1;
         }
 
+        #vis1-tooltip {
+          background-color: #f7f7f7;
+          color: #b31b1b;
+          max-height: 300px;
+        }
+
         .flex-child:first-child {
           margin-right: 20px;
         }
@@ -57,7 +68,7 @@
       <div class="flex-container">
         <div class="flex-child-1" id="vis1-1"></div>
         <div class="flex-child-2" id="vis1-tooltip">
-          <h3>Information Box</h3>
+          <h3>More Information</h3>
           <p id="time-range">Time Range:</p>
           <p id="infos"></p>
         </div>
@@ -74,14 +85,28 @@
       </script>
     </div>
 
-    <h3><b>Methodology:</b></h3>
-    <p>
-      I collected this data by going through volumes of the Cornell Register
-      spanning years 1869 to 1924. For each volume, I went through the section
-      detailing the degrees conferred at Commencement and counted the number of
-      records. I chose to focus on undergraduate degrees because they had more
-      solid categories, and also chose to leave out undergraduate degrees that
-      were around for no more than a few years.
-    </p>
+    <h3><b>Methodology and Credits</b></h3>
+    <div class="flex-container">
+      <div class="flex-child-1">
+        <p>
+          I collected this data by going through volumes of the Cornell
+          University Register spanning years 1869 to 1924. For each volume, I
+          went through the section detailing the degrees conferred at
+          Commencement and counted the number of records. I chose to focus on
+          undergraduate degrees because they had more solid categories, and also
+          chose to leave out undergraduate degrees that were around for no more
+          than a few years.
+        </p>
+      </div>
+      <div class="flex-child-2">
+        <p>Author: Sahar Sami (Class of 2023)</p>
+        <p>
+          Source:
+          <a href="https://ecommons.cornell.edu/handle/1813/22307"
+            >Cornell Register via eCommons</a
+          >
+        </p>
+      </div>
+    </div>
   </body>
 </html>
