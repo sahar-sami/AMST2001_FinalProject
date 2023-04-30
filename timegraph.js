@@ -14,11 +14,14 @@ const textInfos = {
   2: 'In 1883, the first Cornellian had a specific course added to their degree title: "In History and Political Science." It is the first instance of a \'major\' for the Bachelor of Philosophy.',
   4: "In 1874, Cornellians were recognized for earning Bachelors of Science in specific concentrations, chemistry and natural history. It is the first instance of a 'major' for both the Bachelor of Philosophy and Cornell overall.",
   6: "During this time, the degree was named as 'Doctor of Veterinary Medicine.' However, while doctor degrees are considered graduate degrees today, this was still considered as a 'first degree'.",
-  8: "When this degree was re-introduced, it was renamed to 'Bachelor of the Science of Agriculture.'",
-  10: "When this degree was re-introduced, it was renamed to 'Bachelor of the Science of Architecture.' It later went back to its original name of Bachelor of Architecture.",
+  9: "When this degree was re-introduced, it was renamed to 'Bachelor of Science in Agriculture,' still separated from the B.S. degree and not as a concentration.",
+  10: "When this degree was re-introduced in the 1890s, it was renamed to 'Bachelor of the Science of Architecture.' It later went back to its original name of Bachelor of Architecture.",
+  11: 'Although not included here, a new degree called Bachelor of Landscape Architecture (B.L.A.) was added to the College of Architecture at the time and was first conferred in 1923.',
   12: 'This degree was temporarily named Bachelor of Civil Engineering.',
   13: 'This degree was temporarily named Bachelor of Mechanical Engineering.',
   15: 'In 1902, this degree was renamed to Forest Engineer.',
+  16: 'During these years, even though the Bachelor of Science was offered in the College of Agriculture and College of Home Economics, the College of Arts and Sciences instead offered just the Bachelor of Arts and Bachelor of Chemistry. This contrasts the College of Arts and Sciences today.',
+  17: 'The B.F.A. was offered by the then-called College of Architecture, and today is offered by the College of Architecture, Art, and Planning.',
   18: 'Electrical Engineering used to be a concentration under the Mechanical Engineer degree. It later became its own conferrable degree, likely because many students were studying it.',
 };
 
@@ -66,6 +69,7 @@ function timegraph() {
     annotations
       .append('g')
       .attr('class', 'y axis')
+      .attr('font', '16px times')
       .attr('transform', `translate(${margin.left},${margin.top})`)
       .call(leftAxis);
     annotations
@@ -310,7 +314,7 @@ function countgraph() {
       .attr('y', (d, i) => 20 + i * 20)
       .style('fill', 'black')
       .text((d) => d)
-      .style('font-size', 12)
+      .style('font-size', 14)
       .attr('text-anchor', 'left')
       .style('alignment-baseline', 'middle');
   });
